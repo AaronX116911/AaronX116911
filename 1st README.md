@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @AaronX116911
+- 👀 I’m interested in a lot of different things feel free to ask me!!!
+- 🌱 I’m currently learning coding to help me create and complete my projects and inventions!!!
+- 💞️ I’m looking to collaborate on the projects with anyone that can be honest, trustworthy, reliable 💯%, and they'll have to swear upon my oath
+- 📫 How to reach me aaronx116911@proton.me
