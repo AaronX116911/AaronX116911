@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animedia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.c upom/ajax/libs/font-awesome" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        transition: 0.3s;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+        outline: none;
+    }
+
+    body {
+        background-color: Red;
+    }
+
+    .ham {
+        width: 45px;
+        height: 45px;
+        background: black;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        background: red;
+        border-radius: 3px;
+        width: 25px;
+        height: 3px;
+        margin: 2px;
+    }
+
+    .active .line1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+
+    }
+
+    .active .line2 {
+        opacity: 0;
+    }
+
+    .active .line3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .link {
+        left: 0%;
+    }
+
+    nav ul {
+        left: -50%;
+        position: fixed;
+        height: 100vh;
+        width: 50%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul h1 {
+        color: white;
+    }
+
+    ul li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    ul li:hover {
+        background: #26A69A;
+        padding-left: 7%;
+        width: 93%;
+    }
+
+    li a {
+        color: #fff;
+    }
+
+    .text {
+        padding: 1px 10px 1px 10px;
+        color: #fff;
+    }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul id="ul">
+                <h1>MENU</h1><br>
+                <li><a href="main.html" href lang="en" class="link">HOME</a></li>
+                <li><a href="pictures.html" href lang="en" class="link">PICTURES</a></li>
+                <li><a href="videos.html" href lang="en" class="link">VIDEOS</a></li>
+                <li><a href="messenger.html" href lang="en" class="link">MESSENGER</a></li>
+                <li><a href="about.html" href lang="en" class="link">ABOUT</a></li>
+                <li><a href="contact.html" href lang="en" class="link">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamMenu" class="ham" onclick="hamMenuClick()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <h2 class="text">Welcome to The # 1 ZooHaven!!!</h2> <br> <br>
+        <p class="text"> This information is for any individual that don't know about the word Zoophilia and what it's
+            all
+            about. For
+            starters Zoophilia is a social construct that promotes animal friendship and bonding with a human-being.
+            Zoophilia
+            is the act of a human-being or animal/pet establishing a normal human-like relationship with eachother.
+            There
+            might be sexual attraction involved, Yet, for most of us it's on more of an emotional and mental level that
+            we
+            have an attraction to the animal, more than there being sexual attraction, satisfaction or stimulation
+            through
+            sexual intercourse. People that are practicing or involved with Zoophilia are named Zoophilists. </p>
+        <br>
+        <img src="Pictures/Zoophilia & Post-Human Love.jpeg" alt="Animal and Human Love" width="100%">
+        <br>
+
+        <p class="text">Practices of Zoophilia have been going on for thousands of years and was originally called
+            Bestiality. As for me personally, I dont like bestiality, for the simple fact its raping and harming the
+            animal or
+            pet against its will. I personally, don't care, that people think animals can't consent or have no free will
+            cause
+            I've witnessed a horse and dog give consent to have sexual intercourses with me. So Bestiality is just the
+            same as
+            a human raping another human, and people who do such acts need help or locked away in a place where there
+            will be
+            no more victims created!!!</p>
+
+        <br>
+        <img src="Pictures/zoophilia Info.jpg" alt="Zoophilia Info" width="100%">
+        <br>
+
+        <p class="text">Here's some information about what states in the U.S.A. have no laws against Zoophilia or
+            Bestiality:
+            As of 2021, there are only four states in the country that do not have laws prohibiting this practice. They
+            are
+            Hawaii, New Mexico, West Virginia, and Wyoming. Yet, Hawaii and Wyoming are currently deciding wether or not
+            to
+            make it illegal.</p>
+        <br>
+        <img src="Pictures/Cartoon Puppy Jacking Off Redrocket.jpg" alt="Puppy Stroking Dog" width="100%">
+        <br>
+
+
+
+        <p align="center">
+            <font color="#A7A8AA">2024 © Animedia - All Rights Reserved</font>
+        </p>
+        <br>
+
+    </header>
+
+    <script>
+        function hamMenuClick() {
+            document.getElementById("hamMenu").classList.toggle("active");
+            document.getElementById("ul").classList.toggle("link");
+        }
+    </script>
+</body>
+
+</html>

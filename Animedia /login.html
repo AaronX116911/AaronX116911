@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LoginPage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+  #1 Place for Animal Lovers Everywhere!!!
+  <style>
+    html {
+    height: 100%;
+    width: 100%;
+    }
+
+    /* color variables */
+    :root {
+    --primary-green: #2da44e;
+    --primary-dark: #24292f;
+    --primary-light: #ffffff;
+    --fade-light: #f6f8fa;
+    --border-color: rgb(141, 141, 141);
+    }
+
+    /* default properties */
+    a {
+    text-decoration: none;
+    color: var(--primary-light);
+    }
+
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-dark);
+    }
+
+    .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    align-items: center;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--border-color);
+    }
+
+    .login-wrapper {
+    width: 100%;
+    border: 1px solid #D0D7DE;
+    padding: 25px 15px;
+    border-radius: 5px;
+    background-color: #F6F8FA;
+    margin-top: 20px;
+    }
+
+    .input-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+
+    .input-label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 15px;
+    padding:3px 0px;
+    }
+
+    input {
+    width: 100%;
+    outline: none;
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid #D0D7DE;
+    }
+
+    input:focus {
+    border: 1px solid #3181E0;
+    }
+
+    .submit-btn {
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 16px;
+    background-color: #1F883D;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    }
+
+    .submit-btn:hover {
+    transform: translateY(-1px);
+    }
+
+    .info {
+    font-size: 15px;
+    margin-top: 20px;
+    border: 1px solid #D0D7DE;
+    padding: 20px 15px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #FFFFFF;
+    }
+
+    .link{
+    color:#3181E0;
+    }
+
+    @media screen and (max-width: 360px) {
+    body {
+    padding: 0px 15px;
+    }
+
+    .info {
+    font-size: 14px;
+    padding: 17px 10px;
+    }
+
+    .input-label {
+    font-size: 14px;
+    }
+    }
+
+    .bottom{
+    font-size:14px;
+    margin-top:30px;
+    }
+
+    .bottom{
+    color:#727982;
+    }
+
+    .bottom a{
+    color:#3181E0;
+    margin:0px 5px;
+    }
+  </style>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/59784df54a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+    </div>
+    <h1>Sign in to Animedia</h1>
+    <div class="login-wrapper">
+      <div class="input-box">
+        <div class="input-label">Username or Email Address</div>
+        <input type="text" required>
+      </div>
+
+      <div class="input-box">
+        <div class="input-label">
+          <span>Password</span>
+          <a href="#" class="link">Forgot Password?</a>
+        </div>
+        <input type="password" required>
+      </div>
+
+      <button class="submit"><a href="main.html" href lang="en" class="link">Sign In</a></button>
+    </div>
+
+    <div class="info">
+      <span>New to Animedia? <a href="index.html" href lang="en" class="link">Create an account.</a></span>
+    </div>
+
+    <p class="bottom"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Docs</a><a href="#">Contact</a>Animedia Support</p>
+    </div>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  </body>
+
+</html>

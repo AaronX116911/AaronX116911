@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Dating App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+
+        #messageInput {
+            width: 80%;
+            padding: 8px;
+            margin-right: 5px;
+        }
+
+        #sendButton {
+            width: 18%;
+            padding: 8px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Social Dating App</h1>
+    </header>
+
+    <section>
+        <div id="messages"></div>
+        <div>
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button id="sendButton" onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <script>
+        function sendMessage() {
+            var messageInput = document.getElementById("messageInput");
+            var messagesDiv = document.getElementById("messages");
+
+            if (messageInput.value.trim() !== "") {
+                var message = document.createElement("p");
+                message.textContent = messageInput.value;
+                messagesDiv.appendChild(message);
+                messageInput.value = "";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
